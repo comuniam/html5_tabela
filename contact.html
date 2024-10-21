@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Título da Página</title>
+        <link rel="stylesheet" href="css/estilos.css">
+        <!-- Arquivo CSS externo -->
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <h1>Cabeçalho da Página</h1>
+                <div id="esquerda">
+                    <h1>Empresa XYZ</h1>
+                </div>
+                <div id="direita">
+                    <img src="img/faculdade.png" alt="Imagem da faculdade">
+                </div>
+
+            </header>
+
+            <nav>
+                <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">O curso</a></li>
+                        <li><a href="grade.html">Grade</a></li>
+                        <li><a href="contact.html">Contato</a></li>
+                        <li><a href="location.html">Localização</a></li>
+                </ul>
+            </nav>
+
+            <main>
+                <section>
+                    <h2>Seção de Conteúdo</h2>
+                    <form action="#" method="post" id="frm" name="frm"> <!--o "method" é o modo de envio dos dados solicidados no form-->
+                        <label for="txtnome">Nome</label>
+                        <input type="text" name="txtnome" id="txtnome" placeholder="Digite seu nome aqui" required>
+                        
+                        <label for="txtemail">Email</label>
+                        <input type="email" name="txtemail" id="txtemail" placeholder="Digite seu email aqui" required>
+
+                        <label for="txtdata">Data de Nascimento</label>
+                        <input type="date" name="txtdata" id="txtdata" required>
+
+                        <label for="txtsalario">Salário</label>
+                        <input type="number" name="txtsalario" id="txtsalario" step="0.5" required>
+
+                        <label for="estado">Estado</label>
+                        <select name="estado" id="estado" required>
+                            <option disabled selected>Escolha seu estado</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="MG">Minas Gerais</option>
+                        </select>
+
+                        <label>Estado Civil</label>
+                        <div class="gruporadio">
+                            <label for="solteiro">
+                                <input type="radio" name="estadocivil" id="solteiro" value="Solteiro" required>Solteiro
+                            </label><br>
+                            <label for="casado">
+                                <input type="radio" name="estadocivil" id="casado" value="Casado" required>Casado
+                            </label><br>
+                            <label for="Outro">
+                                <input type="radio" name="estadocivil" id="outro" value="Outro" required>Outro
+                            </label>
+                        </div>
+
+
+
+                        <button type="submit">Enviar</button>
+                    </form>
+                </section>
+
+            </main>
+
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Minha Empresa. Todos os direitos reservados.</p>
+        </footer>
+
+        <script src="script.js"></script> <!-- Arquivo JavaScript externo -->
+    </body>
+</html>
